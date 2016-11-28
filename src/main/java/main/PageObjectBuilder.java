@@ -32,12 +32,16 @@ public class PageObjectBuilder {
 		fileString.attachNewLine();
 		attachWebElements(pageParser.getElements("input", "text"));
 		attachWebElements(pageParser.getElements("input", "password"));
-		attachWebElements(pageParser.getElements("button"));
+		
+		fileString.attachNewLine();
+		attachWebElements(pageParser.getElements_button());
 
 		fileString.attachNewLine();
 		attachFunctions_type(pageParser.getElements("input", "text"));
 		attachFunctions_type(pageParser.getElements("input", "password"));
-		attachFunctions_click(pageParser.getElements("button"));
+		
+		fileString.attachNewLine();
+		attachFunctions_click(pageParser.getElements_button());
 		
 		attachPieceOfPage(2);
 	}

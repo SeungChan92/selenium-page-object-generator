@@ -14,14 +14,16 @@ public class Controller {
 	private static final int maxDepthOfCrawling = 0;
 	private static final String crawlStorageFolder = "/data/crawl/root";
 	private static final int numberOfCrawlers = 7;
+	private static final int socketTimeout = 5000;
+	private static final int connectionTimeout = 5000;
 
 	public static void crawl() throws Exception {
 
 		CrawlConfig crawlConfig = new CrawlConfig();
 		crawlConfig.setCrawlStorageFolder(crawlStorageFolder);
 		crawlConfig.setMaxDepthOfCrawling(maxDepthOfCrawling);
-		
-		//System.out.println("loginUrl : " + Config.get("baseUrl") + Config.get("loginUrl"));
+		crawlConfig.setSocketTimeout(socketTimeout);
+		crawlConfig.setConnectionTimeout(connectionTimeout);
 
 		AuthInfo authInfo = new FormAuthInfo(
 				Config.get("username"), Config.get("password")
@@ -50,5 +52,7 @@ public class Controller {
 		 * will reach the line after this only when crawling is finished.
 		 */
 		controller.start(Crawler.class, numberOfCrawlers);
+		
+		System.out.println("crawling is finished");
 	}
 }

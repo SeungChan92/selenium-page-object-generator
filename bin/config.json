@@ -1,6 +1,6 @@
 {
-	"baseUrl" : "http://www-sta.gosms.co.kr:10051",
-	"lastUrl" : "/fax/sendView",
+	"baseUrl" : "http://www-sta.adppurio.com:10051",
+	"lastUrl" : "/fax/popup/document",
 	
 	"username" : "issea1015",
 	"password" : "test1234##",
