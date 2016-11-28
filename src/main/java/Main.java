@@ -1,3 +1,4 @@
+import infra.Config;
 
 public class Main {
 
@@ -13,6 +14,8 @@ public class Main {
 	}
 	private static void crawl() {
 
+		Config.init();
+		
 		try {
 			crawl.Controller.start();
 		} catch (Exception e) {
