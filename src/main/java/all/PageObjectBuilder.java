@@ -14,23 +14,31 @@ public class PageObjectBuilder {
 		pageParser = new PageParser(Config.get("baseUrl") + Config.get("lastUrl"));
 	}
 	public static void build() {
+
 		attachPieceOfPage(1);
 
 		fileString.attach(JavaGenerator.generateFunction_goToPage());
 
 		fileString.attachNewLine();
-		attachWebElements("input", "text");
-		attachWebElements("input", "password");
-		attachWebElements("button");
+		attachWebElements(pageParser.getElements("input", "text"));
+		attachWebElements(pageParser.getElements("input", "password"));
+		attachWebElements(pageParser.getElements("button"));
+
+		fileString.attachNewLine();
+		attachFunctions_type(pageParser.getElements("input", "text"));
+		attachFunctions_type(pageParser.getElements("input", "password"));
+		attachFunctions_click(pageParser.getElements("button"));
+		
+		attachPieceOfPage(2);
 	}
+
+
 	public static FileString getFileString() {
 		return fileString;
 	}
 
 	// depth 1
-	private static void attachWebElements(String tagName) {
-
-		Elements elements = pageParser.getElements(tagName);
+	private static void attachWebElements(Elements elements) {
 
 		for(int i=0; i<elements.size(); i++)
 		{
@@ -38,13 +46,19 @@ public class PageObjectBuilder {
 					elements.get(i).attr("id"), elements.get(i).tagName()));
 		}
 	}
-	private static void attachWebElements(String tagName, String type) {
-
-		Elements elements = pageParser.getElements(tagName, type);
+	private static void attachFunctions_type(Elements elements) {
 
 		for(int i=0; i<elements.size(); i++)
 		{
-			fileString.attach(JavaGenerator.generateWebElement(
+			fileString.attach(JavaGenerator.generateFunction_type(
+					elements.get(i).attr("id"), elements.get(i).tagName()));
+		}
+	}
+	private static void attachFunctions_click(Elements elements) {
+
+		for(int i=0; i<elements.size(); i++)
+		{
+			fileString.attach(JavaGenerator.generateFunction_click(
 					elements.get(i).attr("id"), elements.get(i).tagName()));
 		}
 	}

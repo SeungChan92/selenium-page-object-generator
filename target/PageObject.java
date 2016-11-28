@@ -1,4 +1,4 @@
-package page.fax.sendView;
+package page.//PATH.TO.PAGE;
 
 import java.util.List;
 
@@ -25,3 +25,17 @@ public class Page extends page.Page {
 	private WebElement input_userId;
 	@FindBy(id = "userPwd")
 	private WebElement input_userPwd;
+
+	public Page type_userId(String userId) {
+
+		this.input_userId.sendKeys(userId);
+
+		return this;
+	}
+	public Page type_userPwd(String userPwd) {
+
+		this.input_userPwd.sendKeys(userPwd);
+
+		return this;
+	}
+}

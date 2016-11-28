@@ -1,4 +1,4 @@
-package page.fax.sendView;
+package page.//PATH.TO.PAGE;
 
 import java.util.List;
 
