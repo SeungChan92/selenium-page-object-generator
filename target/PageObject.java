@@ -18,23 +18,47 @@ public class Page extends page.Page {
 	}
 
 	public static void goToPage() {
-		Tool.goToPage("/");
+		Tool.goToPage("/fax/sendView");
 	}
 
-	@FindBy(id = "userId")
-	private WebElement input_userId;
-	@FindBy(id = "userPwd")
-	private WebElement input_userPwd;
+	@FindBy(id = "sendMainDtoSubject")
+	private WebElement input_sendMainDtoSubject;
+	@FindBy(id = "textReceiverInput")
+	private WebElement input_textReceiverInput;
+	@FindBy(id = "textReceiverName")
+	private WebElement input_textReceiverName;
+	@FindBy(id = "coverSendName")
+	private WebElement input_coverSendName;
+	@FindBy(id = "coverSendNumber")
+	private WebElement input_coverSendNumber;
 
-	public Page type_userId(String userId) {
+	public Page type_sendMainDtoSubject(String sendMainDtoSubject) {
 
-		this.input_userId.sendKeys(userId);
+		this.input_sendMainDtoSubject.sendKeys(sendMainDtoSubject);
 
 		return this;
 	}
-	public Page type_userPwd(String userPwd) {
+	public Page type_textReceiverInput(String textReceiverInput) {
 
-		this.input_userPwd.sendKeys(userPwd);
+		this.input_textReceiverInput.sendKeys(textReceiverInput);
+
+		return this;
+	}
+	public Page type_textReceiverName(String textReceiverName) {
+
+		this.input_textReceiverName.sendKeys(textReceiverName);
+
+		return this;
+	}
+	public Page type_coverSendName(String coverSendName) {
+
+		this.input_coverSendName.sendKeys(coverSendName);
+
+		return this;
+	}
+	public Page type_coverSendNumber(String coverSendNumber) {
+
+		this.input_coverSendNumber.sendKeys(coverSendNumber);
 
 		return this;
 	}

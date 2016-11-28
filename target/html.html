@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="shortcut icon" href="/img/gosms/favicon.ico">
+<title>GOSMS</title>
+<link rel="stylesheet" type="text/css" href="/css/bar_blue/sub.css" />
+<link rel="stylesheet" type="text/css" href="/webjars/jquery-ui/1.11.4/jquery-ui.min.css" />
+
+</head>
+
+<body>
+<!-- wrap -->
+<div id="wrap">
+
+	<!-- header -->
+	<!-- header 100% -->
+	<div class="header_960_full">
+	
+		<!-- gnb -->
+		<div class="gnb_wrap">
+			<div class="gnb_area">
+				<a href="/user/edit">마이페이지</a><span>|</span>
+				<a href="/payment/index">결제관리</a><span>|</span>
+				<a href="/guide/service">서비스안내</a><span>|</span>
+				<a href="/guide/use/join">사용안내</a><span>|</span>
+				<a href="/bbs/faq" class="last">고객센터</a>
+				<!--a href="#" class="last">사이트맵</a-->
+			</div>
+		</div>
+		<!-- /gnb -->
+		
+		<!-- 서비스 로고 -->
+		<div class="logo_wrap">
+			<h1 class="logo"><a href="/"><img src="/img/gosms/logo_header.gif" alt="GOSMS"></a></h1>
+			
+			<!-- 배너 -->
+<div class="banner"><a><img src="/img/gosms/banner_header.gif" alt=""></a></div>			<!-- /배너 -->
+		</div>
+		<!-- /서비스 로고 -->
+
+		<!-- lnb -->
+		<div id="lnb">		
+			<!-- 메뉴 -->
+			<div class="ln_area">
+
+				<!-- [D] 메뉴 클래스는 ln_4 ~ ln9 까지 제공 -->
+				<ul class="ln_6">
+					<li class="nav"><a href="/sms/sendView">문자</a>
+						<div class="sm">
+							<div class="title">
+								<dl>
+									<dt class="ico_sms"><a href="/sms/sendView">문자보내기</a></dt>
+									<dd><a href="/sms/sendView">저렴하고 간편한 문자!<br/> 대량 발송, 맞춤 발송</a></dd>
+								</dl>
+							</div>
+							<div class="sub_menu">
+								<dl>
+									<dt>단문</dt>
+									<dd><a href="/sms/sendView">단문전송</a></dd>
+								</dl>
+								<dl>
+									<dt>장문</dt>
+									<dd><a href="/lms/sendView">장문전송</a></dd>
+								</dl>
+								<dl>
+									<dt>엑셀</dt>
+									<dd><a href="/sms/excel_different/sendView">다른내용전송</a></dd>
+									<dd><a href="/sms/excel_replace/sendView">일부바꿔전송</a></dd>
+								</dl>
+							</div>
+						</div>
+					</li>
+					<li class="nav" ><a href="/mms/sendView">MMS</a>
+						<div class="sm">
+							<div class="title">
+								<dl>
+									<dt class="ico_mms"><a href="/mms/sendView">MMS</a></dt>
+									<dd><a href="/mms/sendView">저렴하고 간편한 문자!<br/> 대량 발송, 맞춤 발송</a></dd>
+								</dl>
+							</div>
+							<div class="sub_menu">
+								<dl>
+									<dt>포토</dt>
+									<dd><a href="/mms/sendView">포토보내기</a></dd>
+								</dl>
+								<dl>
+									<dt>장문</dt>
+									<dd><a href="/lms/sendView">장문보내기</a></dd>
+								</dl>
+							</div>
+						</div>
+					</li>
+					<li class="nav" ><a href="/fax/sendView">팩스</a>
+						<div class="sm">
+							<div class="title">
+								<dl>
+									<dt class="ico_fax"><a href="/fax/sendView">Fax</a></dt>
+									<dd><a href="/fax/sendView">편리하게 팩스를 발송하세요</a></dd>
+								</dl>
+							</div>
+							<div class="sub_menu">
+								<dl>
+									<dt>팩스보내기</dt>
+									<dd><a href="/fax/sendView">팩스보내기</a></dd>
+								</dl>
+								<dl>
+									<dt>팩스함관리</dt>
+									<dd><a href="/fax/list/receive">받은팩스함</a></dd>
+									<dd><a href="/fax/list/document">문서보관함</a></dd>
+									<dd><a href="/fax/list/long">장기보관함</a></dd>
+									<dd><a href="/fax/list/temp">임시보관함</a></dd>
+								</dl>
+								<dl>
+									<dt>수신상품설정</dt>
+									<dd><a href="/fax/receiveCharge/show">수신상품설정</a></dd>
+								</dl>
+								
+								<dl>
+									<dt>내 팩스커버</dt>
+									<dd><a href="/fax/mycover/saveView">내 팩스커버</a></dd>
+								</dl>
+							</div>
+							
+						</div>
+					</li>
+					<li class="nav"><a href="/address/groups">주소록</a>
+						<div class="sm">
+							<div class="title">
+								<dl>
+									<dt class="ico_juso"><a href="/address/groups">주소록</a></dt>
+									<dd><a href="/address/groups">발송 대상을 주소록으로 간편하게 관리하세요.</a></dd>
+								</dl>
+							</div>
+							<div class="sub_menu">
+								<dl>
+									<dt>그룹별주소록</dt>
+									<dd><a href="/address/groups">그룹별주소록</a></dd>
+								</dl>
+								<dl>
+									<dt>그룹변경/삭제</dt>
+									<dd><a href="/address/groups">그룹변경/삭제</a></dd>
+								</dl>
+								<dl>
+									<dt>외부주소록</dt>
+									<dd><a href="/address/excel">외부주소록</a></dd>
+								</dl>
+							</div>
+							<div class="sub_menu">
+								<dl>
+									<dt>인쇄/다운로드</dt>
+									<dd><a href="/address/print">인쇄/다운로드</a></dd>
+								</dl>
+							</div>
+						</div>
+					</li>
+					<li class="nav" ><a href="/payment/index">결제</a>
+						<div class="sm">
+							<div class="title">
+								<dl>
+									<dt class="ico_pay"><a href="/payment/index">결제</a></dt>
+									<dd><a href="/payment/index">서비스 이용을 위한 결제 및 금액 사용내역을 확인하세요.</a></dd>
+								</dl>
+							</div>
+							<div class="sub_menu">
+								<dl>
+									<dt>통장내역</dt>
+									<dd><a href="/payment/history/list">통장내역</a></dd>
+									<dd><a href="/payment/monthly/init">월간사용 명세서 조회</a></dd>
+								</dl>
+								<dl>
+									<dt>결제하기</dt>
+									<dd><a href="/payment/index">결제하기</a></dd>
+								</dl>
+							</div>
+						</div>
+					</li>
+					<li class="nav"><a href="/send/result/list">전송결과</a>
+					<div class="sm">
+							<div class="title">
+								<dl>
+									<dt class="ico_result"><a href="/send/result/list">전송결과</a></dt>
+									<dd><a href="/send/result/list">발송내역을 확인하세요.</a></dd>
+								</dl>
+							</div>
+							<div class="sub_menu">
+								<dl>
+									<dt>전송결과</dt>
+									<dd><a href="/send/result/list">전송결과</a></dd>
+								</dl>
+								<dl>
+									<dt>이전 전송결과</dt>
+									<dd><a href="/send/pre_result/list">이전 전송결과</a></dd>
+								</dl>
+							</div>
+						</div>
+					</li>
+				</ul>
+
+			</div>
+			<!-- /메뉴 -->			
+		</div>
+		<!-- /lnb -->
+
+	</div>
+	<!-- /header 100% -->
+	<!-- /header -->
+	
+	<!-- login -->
+	
+	<!-- 개인정보 -->
+	<div class="userInfoWrap">
+		<div class="user_info_area">
+			<!-- [D] 수신번호 없을을때 -->
+			<div class="username_box" >
+				<p class="name"><span class="ico"></span>안승찬<a href="/logout" class="btn_logout">로그아웃</a></p>
+			</div>
+			<!-- [D] 수신번호 있을때 display_n 삭제-->
+			<div class="username_box display_n">
+				<p>안승찬<a href="/logout" class="btn_logout">로그아웃</a></p>
+				<p class="last-child">수신번호 : <a href="" class="btn_app">신청하기</a></p>
+			</div>
+			<div class="charge_box">
+				<p>통장잔액 : <strong id="TopRemainAmount">0원</strong><a href="/payment/index" class="btn_charge">요금충전</a></p>
+				<p class="last-child">사용가능금액 : <strong id="TopUsablenAmount">0원</strong></p>
+			</div>
+			<div class="private_box">
+				<p>상태 : 선불사용자 [정상]</p>
+				<p class="last-child">
+					
+					씨앗 : <strong id="TopRemainSeed">0건</strong>
+					</p>
+			</div>
+		</div>
+	</div>
+	<!-- /개인정보 -->	
+	<!-- /login -->
+	
+	<!-- 본문 -->
+	<div id="contents">
+		<div class="contents_wrap">
+			<!-- 퀵메뉴 -->
+<div id="quickMenu">
+<div class="rightbanner_area"><img src="/img/gosms/banner_cs.gif" alt=""></div>
+</div>			<!-- /퀵메뉴 -->
+			
+			<!-- 내용 -->
+				<!-- 좌측 메뉴 -->
+				<!-- 좌측 메뉴 -->
+				<div class="snb">
+					<h1 class="leftmenu_tit">팩스</h1>
+					<ul class="menu">
+						<li><a href="/fax/sendView">팩스보내기</a></li>
+						<li><a href="/fax/list/receive">팩스함관리</a>
+							<ul class="menu_low">
+								<li><a href="/fax/list/receive">받은 팩스함</a></li>
+								<li><a href="/fax/list/document">문서 보관함</a></li>
+								<li><a href="/fax/list/long">장기 보관함</a></li>
+								<li><a href="/fax/list/temp">임시 보관함</a></li>
+							</ul>
+						</li>
+						<li><a href="/fax/receiveCharge/show">수신상품 설정</a></li>
+						<li><a href="/fax/mycover/saveView">내 팩스커버</a></li>
+					</ul>
+				</div>
+				<!-- /좌측 메뉴 -->				<!-- /좌측 메뉴 -->
+			<!-- 본문 내용 -->
+				<div id="cont" class="cont_area">
+					<div class="cont_top">
+						<h1>팩스보내기</h1>
+						<p class="location">
+							<a href="/">Home</a> > <a href="/fax/sendView">팩스</a> > <em><a href="/fax/sendView">팩스보내기</a></em>
+						</p>
+					</div>
+
+					<form id="send_input" name="send_input">
+
+					<div class="faxSend_wrap">
+						<div class="paper_area">
+							<!-- 제목/받는사람/전송문서/발신번호 -->
+							<div class="main_func">
+								<!-- 제목 -->
+								<div class="func1">
+									<h3>제목<a href="" class="ico_help fun_layer" data-type="title">?</a></h3>
+									<p><input type="text" class="inp_box01" id="sendMainDtoSubject" name="sendMainDto.subject" placeholder="** 전송결과관리용 제목입력 **" value=""/></p>
+								</div>
+								<!-- /제목 -->
+
+								<!-- 받는사람 -->
+								<div class="func2">
+									<h3>받는사람<a href="" class="ico_help fun_layer" data-type="receiver">?</a></h3>
+									<div class="fromnum">
+										<p class="num">
+											<input type="text" class="inp_box01 fax" id="textReceiverInput" placeholder="팩스번호"/><input type="text" class="inp_box01 name" id="textReceiverName" placeholder="받는사람" /> <a href="" class="btn_mid_blue02 add" id="btnReceiverAdd">추가</a>
+										</p>
+										<p class="numchcek">* 중복번호는 1번만 발송됩니다.</p>
+										<div class="fax_num_list" id="funReceiveInfo">
+											<ul id="sendReceivers">
+											</ul>
+											<a href="" class="btn_mid_blue01 address" id="funPopAddress">주소록</a>
+										</div>
+										<p class="bottbtn"><a href="" class="btn_small_wdelete" id="btnReceiverSelectedDelete">삭제</a>
+										<a href="" class="btn_small_wdelete" id="btnReceiverAllDelete">전체삭제</a></p>
+										<div class="total">총 <span class="num" id="sendRequestCount">0</span> 명</div>
+									</div>
+								</div>
+								<!-- /받는사람 -->
+
+								<!-- 전송문서 -->
+								<div class="func3">
+									<h3>전송문서<a href="" class="ico_help fun_layer" data-type="document">?</a></h3>
+									<div class="fileadd">
+										<p class="file"><span class="tit">파일첨부</span><input type="file" id="fileupload" class="fileupload" name="uploadFile"></p>
+										<div class="file_add_list" id="funFileAddList">
+										<ul>
+										</ul>
+											<a href="" class="btn_mid_white temp" id="funFaxDocument">문서보관함</a>
+										</div>
+										<p class="bottbtn"><a href="" class="btn_small_wdelete" id="funFileDelete">삭제</a><a href="" class="btn_small_down" id="funDown">아래로</a><a href="" class="btn_small_up" id="funUp">위로</a>문서정렬</p> <div class="total">총 <span class="num" id="funTotalCount">0</span> 매</div>
+									</div>
+								</div>
+								<!-- /전송문서 -->
+								
+								<!-- 발신번호 -->
+								<div class="func4">
+									<h3>발신번호<a href="" class="ico_help fun_layer" data-type="send_number">?</a></h3>
+									<div class="callernum">
+										<input id="sendMainDtoSendNumber" name="sendMainDto.sendNumber" type="number" class="inp_box01" value="" readonly/><a href="" class="btn_mid_white fun_layer" data-type="send_number">발신번호 제한안내</a>
+										<p class="txt">2015년 12월 30일부터 팩스 발신번호 임의 변경이 제한 됩니다.</p>
+									</div>
+								</div>
+								<!-- /발신번호 -->
+							</div>
+							<!-- 제목/받는사람/전송문서/발신번호 -->
+
+							<!-- 팩스커버/예약발송 -->
+							<div class="other_func">
+								<!-- 팩스커버 -->
+								<div class="ofunc1">
+									<h3>팩스커버 </h3>
+									<ul class="use">
+										<li><label for="uesno"><input type="radio" name="sendMainDto.coverType" checked id="uesno" value="NOT_USE" />사용안함</label></li>
+										<li><label for="basiccover"><input type="radio" name="sendMainDto.coverType" id="basiccover" value="DEFAULT" />팩스커버 사용</label></li>
+										<!--li><label for="mycover"><input type="radio" name="sendMainDto.coverType" id="mycover" value="USER" />내 팩스커버 사용</label></li-->
+									</ul>
+									<!-- 팩스커버 사용 시 -->
+									<div class="coveruse" style="display:none" id="funMyCover">
+										<ul class="logo">
+											<li><label for="toplogo"><input type="checkbox" id="toplogo" name="faxCoverUseDto.topLogo" value="top"  />상단로고</label></li>
+											<li><label for="bottlogo"><input type="checkbox" id="bottlogo" name="faxCoverUseDto.bottomLogo" value="bottom"  />하단로고</label></li>
+											<li class="last"><label for="bottaddress"><input id="sendMultiCover" type="checkbox" name="sendMainDto.sendMediaDto.menu" value="EXCEL_DIFFERENT" />주소록연동</label></li>
+										</ul>
+										<p class="send"><span class="tit">보내는사람</span><input type="text" class="inp_box01" name="faxCoverUseDto.senderName" id="coverSendName" /></p>
+										<p class="from"><span class="tit">발신번호</span><input type="text" class="inp_box01" name="faxCoverUseDto.sendNumber" id="coverSendNumber" /></p>
+										<p class="memo"><span class="tit">메모</span><textarea name="faxCoverUseDto.memo" id="coverMemo"></textarea>
+										</p>
+									</div>
+									<!-- /팩스커버 사용 시 -->
+									<!-- 팩스커버 미사용 시 -->
+									<div class="coveruse_no" style="display:block" id="funCoverRegist">
+										<p class="txt">내 팩스 커버로 보내고 싶을 경우<br /> 등록하시면 됩니다.</p>
+										<a href="/fax/mycover/saveView" class="btn_myfaxcover blind">내팩스커버 등록</a>
+									</div>	
+									<!-- /팩스커버 미사용 시 -->
+								</div>
+								<!-- /팩스커버 -->
+
+								<!-- 예약발송 -->
+								<div class="ofunc2" id="sendReserveArea">
+									<h3>예약발송</h3>
+									<ul class="reserv">
+										<li><label for="sendStatusReady"><input type="radio" checked id="sendStatusReady" name="sendMainDto.status" value="READY" />즉시발송</label></li>
+										<li><label for="sendStatusReserve"><input type="radio" id="sendStatusReserve" name="sendMainDto.status" value="RESERVE" />예약발송</label></li>
+									</ul>
+									<div class="datetime">
+										<p class="datetime_date">날짜 : <input type="text" class="inp_box01 reserveDate" /><!--a href="" class="calendar blind">달력</a-->
+										</p>
+										<p class="datetime_time">시간 : 
+											<select class="time hour">
+												<option value="00">00시</option>
+												<option value="01">01시</option>
+												<option value="02">02시</option>
+												<option value="03">03시</option>
+												<option value="04">04시</option>
+												<option value="05">05시</option>
+												<option value="06">06시</option>
+												<option value="07">07시</option>
+												<option value="08">08시</option>
+												<option value="09">09시</option>
+												<option value="10">10시</option>
+												<option value="11">11시</option>
+												<option value="12">12시</option>
+												<option value="13">13시</option>
+												<option value="14">14시</option>
+												<option value="15">15시</option>
+												<option value="16">16시</option>
+												<option value="17">17시</option>
+												<option value="18">18시</option>
+												<option value="19">19시</option>
+												<option value="20">20시</option>
+												<option value="21">21시</option>
+												<option value="22">22시</option>
+												<option value="23">23시</option>
+											</select> 
+											<select class="mint minute">
+												<option value="00">00분</option>
+												<option value="05">05분</option>
+												<option value="10">10분</option>
+												<option value="15">15분</option>
+												<option value="20">20분</option>
+												<option value="25">25분</option>
+												<option value="30">30분</option>
+												<option value="35">35분</option>
+												<option value="40">40분</option>
+												<option value="45">45분</option>
+												<option value="50">50분</option>
+												<option value="55">55분</option>
+											</select>
+										</p>
+									</div>
+								</div>
+								<!-- /예약발송 -->
+							</div>
+							<!-- 팩스커버/예약발송 -->
+						</div>
+						<p class="paperend"></p>
+						<div class="paperbott_area">
+							<!-- 하단 버튼 -->
+							<div class="btn mt_30">
+								<a href="" class="btn_big_gray01 mr10" id="funFaxPreview">미리보기</a> <a href="" class="btn_big_blue01" id="funFaxSend">팩스보내기</a>
+							</div>
+							<!-- /하단 버튼 -->
+						</div>
+					</div>
+						
+						<input type="hidden" name="sendMainDto.sendMediaDto.device" value="FAX" />
+						<input type="hidden" name="sendMessageDto.filePath" />
+					</form>
+				</div>
+			<!-- /본문 내용 -->
+			<!-- /내용 -->
+		</div>
+	</div>
+	<!-- /본문 -->
+	
+	<!-- footer -->
+	<div id="footer">
+		<div class="footer_area">
+			<h1 class="logo"><img src="/img/gosms/logo_footer.gif" alt="gosms"></h1>
+			<div class="con_area">
+				<div class="policy_box">
+					<a href="">회사소개</a><span>|</span>
+					<a href="/guide/privacy"><strong>개인정보취급방침</strong></a><span>|</span>
+					<a href="/guide/agreement">이용약관</a><span>|</span>
+					<a class="FunFunCommonPopup" data-popupurl="/guide/popup/spam" data-popupname="FunFunGuidePopup" data-popupwidth="650px" data-popupheight="396px" data-title="스팸정책"><strong>스팸정책</strong></a><span>|</span>
+			<a class="FunFunCommonPopup" data-popupurl="/guide/popup/not_gathering_email" data-popupname="FunFunGuidePopup" data-popupwidth="500px" data-popupheight="218px" data-title="이메일주소 무단수집거부"><strong>이메일주소 무단수집거부</strong></a>
+				</div>
+				<p>서울시 용산구 한강로 3가 16-58 용산전자오피스텔 1201호(주)비티씨정보 대표이사 서용익</p> 
+				<p>사업자 등록번호 106-86-42409</p>
+				<p>통신판매업신고 제 서용용산-1185호 <span>|</span> 전화 02-717-7335<span>|</span>e-mail : gosms@btcinfo.co.kr </p>
+				<pre>Copyright (c) since 2009 BTC INFO FO.,LTD All Rights Reserved.</pre>
+			</div>
+</div>
+	</div>	<!-- /footer -->
+	
+</div>
+	<!-- 제목 layer -->
+	<div class="lypopupWrap help_title" id="fun_layer_title" style="display:none;">
+		<div class="lypop_faxtit_area"><h1>제목</h1><a href="" class="btn_close fun_close">닫기</a>
+		</div>
+		<div class="fax_cont_area">
+			<p class="tit_txt">* <span class="point">제목, 받는사람이름</span>은 전송결과 관리용으로 발송안됨.<br>
+			(<span class="point">받는사람이름, 제목</span>은 팩스커버 첨부시 표시)</p>
+		</div>
+	</div>
+	<!-- 받는 사람 layer -->
+	<div class="lypopupWrap help_receive" id="fun_layer_receiver" style="display:none;">
+		<div class="lypop_faxtit_area"><h1>받는사람</h1><a href="" class="btn_close fun_close">닫기</a></div>
+		<div class="fax_cont_area">
+			<ul>
+				<li>* 팩스번호를 입력한 후 <span class="point">[추가]</span>버튼을 클릭하거나 '엔터'를 치세요. </li>
+				<li>* 팩스번호 여러개 입력시 ","로 구분. <span class="point">(ex : 0211112222, 023334444, 0255556666...)</span></li>
+				<!--li>* 국제팩스 발송시 '008 +국가번호 +지역번호 +팩스번호'를 입력하시면 됩니다.<br>
+				모든 국제번호(예 001, 002등)입력이 가능하며, 국가번호, 지역번호는 ‘0’을 제외하고 입력하세요. 
+				<a href="" class="btn_small_white">국제팩스 요금표</a>
+				</li-->
+			</ul>
+		</div>
+	</div>
+	<!-- 전송문서 layer-->
+	<div class="lypopupWrap help_senddocu" id="fun_layer_document" style="display:none;">
+		<div class="lypop_faxtit_area help_senddocu"><h1>전송문서</h1><a href="" class="btn_close fun_close">닫기</a></div>
+		<div class="fax_cont_area">
+			<p class="docu_txt">첨부파일 용량은 5MB 넘지않게 해주세요.</p>
+			<dl class="docurule">
+				<dt>* 전송문서 형식</dt>
+				<dd> - 문서 : doc(x), xls(x), ppt(x), hwp, gul, pdf, txt, vsd</dd>
+				<dd> - 이미지 : bmp, gif, tif, tiff, jpeg, jpg, png, psd</dd>
+			</dl>
+		</div>
+	</div>
+	<!-- 발신번호 사전등록 layer -->
+	<div class="lypopupWrap help_faxcaller" id="fun_layer_send_number" style="display:none;">
+		<div class="lypop_faxtit_area"><h1>팩스 발신번호 임의변경 제한 안내</h1><a href="" class="btn_close fun_close">닫기</a>
+		</div>
+		<div class="fax_cont_area">
+			<div class="callerguide">
+				<p class="txt">2015년 12월 29일(화)부터 팩스 발신번호<br> 임의 변경이 제한 됩니다.</p>
+				<dl class="callerrule">
+					<dt>팩스 발신번호 자동 설정</dt>
+					<dd>* 수신번호 사용자 -&gt; 본인 수신번호</dd>
+					<dd>* 수신번호 미 사용자 -&gt; 공통 발신번호</dd>
+				</dl>
+				<p class="botttxt">수신번호 외에 팩스번호를 발신번호로 사용하시려면<br>발신번호사전인증을 받아야만 사용이 가능 합니다. </p>
+			</div>
+			<div class="btnbott"><a href="/user/sendnumber/fax/list" class="btn_mid_blue02">사전인증 바로가기</a></div>
+		</div>
+	</div>
+	<!-- 발신번호 -->
+	<div id="layerSendNumberList" class="lypopupWrap renumWrap" style="position:absolute;display:none;background:#fff;">
+		<div class="lypop_tit_area">
+			<h1>발신번호</h1>
+			<a href="#" class="btn_close">닫기</a>
+		</div>
+		<div class="ly_cont_area">
+			<a class="btn_save">저장 및 적용</a> <a href="/user/sendnumber/fax/list" class="btn_add">신규등록</a>
+			<ul class="tit">
+				<li class="t1">기본</li>
+				<li class="t2">발신번호</li>
+				<li class="t3">메모</li>
+				<li class="t4">삭제</li>
+			</ul>
+			
+			<div id="divSendNumberEmpty">
+				<!-- [D] 번호없을때 class="display_n" 삭제 -->
+				<div class="guide_txt_box display_n">
+					<p>사용 가능한 발신번호가 없습니다</p>
+				</div>
+				<!-- [D] 등록된 번호 없을시 -->
+				<div class="nnum_bt_area"><a href="/user/sendnumber/sms/list" class="btn_sendnum_add"><span class="blind">발신번호등록하기</span></a></div>
+			</div>
+			
+			<div id="divSendNumberExist">
+				<!-- [D] default -->
+				<div id="divDefaultNumberEmpty" class="guide_txt_box">
+					<p>기본 발신번호를 선택해주세요</p>
+				</div>
+				<!-- [D] 리스트 10개 이상  class명 scroll_on 추가 -->
+				<div class="list_area scroll_on">
+					<ul id="ulSendNumberList" class="list">
+					</ul>
+					<!-- [D] 10개이상 나열시 display:block -->
+					<div id="btnSendNumberMore" class="btn_box_1">
+						<a href="#" class="btn_more"><span class="blind">더보기</span></a>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+	</div>
+	<!-- /발신번호 -->
+	
+<script src="/webjars/jquery/1.12.3/jquery.min.js"></script>
+<script src="/webjars/jquery-placeholder/2.1.1/jquery.placeholder.min.js"></script>
+<script src="/js/external/jquery.serializeToJSON.js"></script>
+<script src="/js/common.js"></script>
+<script src="/webjars/jquery-ui/1.11.4/jquery-ui.min.js"></script>
+<script src="/webjars/jquery-blockui/2.65/jquery.blockUI.js"></script>
+<script src="/js/external/jquery.fileupload.js"></script>
+<script src="/js/send.reserveDate.js"></script>
+<script src="/js/send.senddevice.js"></script>
+<script src="/js/send.sendnumber.js"></script>
+<script src="/js/send.sendReceiver.js"></script>
+<script src="/js/fax.send.js"></script>
+<script src="/webjars/jquery-form/3.51/jquery.form.js"></script>
+<script src="/webjars/jquery-validation/1.15.0/jquery.validate.min.js"></script>
+<script src="/js/jquery-validation-additional-method.js"></script>
+<script src="/js/file.upload.js"></script>
+
+</body>
+</html>

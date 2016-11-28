@@ -1,13 +1,10 @@
-package all;
+package main;
 
-import org.jsoup.select.Elements;
-
+import data.FileString;
 import infra.Config;
+import module.crawler.Controller;
 
 public class Main {
-
-	private static Elements inputs;
-	private static Elements buttons;
 
 	public static void main(String[] args) {
 
@@ -15,6 +12,11 @@ public class Main {
 		
 		Config.init();
 		
+		try {
+			Controller.crawl();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		PageObjectBuilder.init();
 		PageObjectBuilder.build();
 		pageObjcetFileString = PageObjectBuilder.getFileString();

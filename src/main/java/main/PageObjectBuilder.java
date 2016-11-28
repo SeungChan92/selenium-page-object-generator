@@ -1,8 +1,15 @@
-package all;
+package main;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 
 import org.jsoup.select.Elements;
 
+import data.FileString;
 import infra.Config;
+import module.JavaGenerator;
+import module.PageParser;
 
 public class PageObjectBuilder {
 
@@ -10,8 +17,11 @@ public class PageObjectBuilder {
 	private static PageParser pageParser;
 
 	public static void init() {
+		String html = "";
+		
 		fileString = new FileString();
-		pageParser = new PageParser(Config.get("baseUrl") + Config.get("lastUrl"));
+		html = readHtml();
+		pageParser = new PageParser(html);
 	}
 	public static void build() {
 
@@ -31,13 +41,32 @@ public class PageObjectBuilder {
 		
 		attachPieceOfPage(2);
 	}
-
-
 	public static FileString getFileString() {
 		return fileString;
 	}
 
 	// depth 1
+	private static String readHtml() {
+		String fileString = "";
+
+		try {
+			BufferedReader in = new BufferedReader(new FileReader(
+					Config.get("htmlFile")));
+			String line;
+
+			while ((line = in.readLine()) != null) {
+				fileString += line += "\n";
+			}
+			in.close();
+
+		} catch (IOException e) {
+			System.err.println(e); // 에러가 있다면 메시지 출력
+			System.exit(1);
+		}
+
+		return fileString;
+	}
+	
 	private static void attachWebElements(Elements elements) {
 
 		for(int i=0; i<elements.size(); i++)
