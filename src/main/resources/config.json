@@ -2,5 +2,6 @@
 	"baseUrl" : "http://www-sta.gosms.co.kr:10051",
 	"lastUrl" : "/",
 	
-	"targetFile" : "target/PageObject.java"
+	"targetFile" : "target/PageObject.java",
+	"piecesOfPageFolder" : "src/main/resources/piecesOfPage"
 }

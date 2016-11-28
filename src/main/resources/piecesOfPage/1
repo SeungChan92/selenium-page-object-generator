@@ -17,11 +17,3 @@ public class Page extends page.Page {
 		super(driver);
 	}
 
-	public static void goToPage() {
-		Tool.goToPage("/");
-	}
-
-	@FindBy(id = "userId")
-	private WebElement input_userId;
-	@FindBy(id = "userPwd")
-	private WebElement input_userPwd;
