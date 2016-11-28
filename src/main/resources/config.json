@@ -1,0 +1,6 @@
+{
+	"baseUrl" : "http://www-sta.gosms.co.kr:10051",
+	"lastUrl" : "/",
+	
+	"targetFile" : "target/PageObject.java"
+}

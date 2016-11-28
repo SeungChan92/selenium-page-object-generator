@@ -26,7 +26,7 @@ public class Config implements Infra {
 	public static void load() {
 		
 		JSONParser parser = new JSONParser();
-		String configFile_path = "src/main/resource/config.json";
+		String configFile_path = "src/main/resources/config.json";
 
 		try {
 			Object obj;
