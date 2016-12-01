@@ -1,7 +1,11 @@
 package module;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 public class PageParser {
@@ -19,11 +23,14 @@ public class PageParser {
 	}
 	public Elements getElements_button() {
 		Elements buttonElements = new Elements();
+		Set<Element> hs = new HashSet<>();
 
-		buttonElements.addAll(this.document.select("button[id~=.+]"));
-		buttonElements.addAll(this.document.select("[href][id~=.+]"));
-		buttonElements.addAll(this.document.select("[id~=.*btn.*]"));
-		buttonElements.addAll(this.document.select("[class~=.*btn.*][id~=.+]"));
+		hs.addAll(this.document.select("button[id~=.+]"));
+		hs.addAll(this.document.select("[href][id~=.+]"));
+		hs.addAll(this.document.select("[id~=.*btn.*]"));
+		hs.addAll(this.document.select("[class~=.*btn.*][id~=.+]"));
+		
+		buttonElements.addAll(hs);
 				
 		return buttonElements;
 	}

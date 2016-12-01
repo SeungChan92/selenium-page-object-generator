@@ -24,16 +24,8 @@ public class Page extends page.Page {
 
 	@FindBy(id = "funFaxSend")
 	private WebElement a_funFaxSend;
-	@FindBy(id = "funFaxSend")
-	private WebElement a_funFaxSend;
 
 
-	public Page click_funFaxSend() {
-
-		this.a_funFaxSend.click();
-
-		return this;
-	}
 	public Page click_funFaxSend() {
 
 		this.a_funFaxSend.click();
