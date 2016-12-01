@@ -13,7 +13,7 @@ import infra.Config;
 public class Controller {
 	private static final int maxDepthOfCrawling = 0;
 	private static final String crawlStorageFolder = "/data/crawl/root";
-	private static final int numberOfCrawlers = 7;
+	private static final int numberOfCrawlers = 1;
 	private static final int socketTimeout = 5000;
 	private static final int connectionTimeout = 5000;
 

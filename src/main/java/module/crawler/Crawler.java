@@ -55,6 +55,8 @@ public class Crawler extends WebCrawler {
 			
 			writeHtmlFile(html);
 		}
+		
+		System.out.println("Crawler visited and went out.");
 	}
 	
 	private void writeHtmlFile(String html) {
